@@ -1,0 +1,51 @@
+{
+	"name": "react-utils",
+	"version": "0.0.0",
+	"license": "MIT",
+	"author": "koranidro <koranidro@gmail.com>",
+	"private": false,
+	"description": "리액트 유틸리티",
+	"keywords": [ "koranidro", "고라니드로", "고라니", "react", "리액트", "util", "utils", "utility", "utilities", "유틸리티" ],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.mjs"
+		}
+	},
+	"files": [ "dist" ],
+	"scripts": {
+		"dev": "vite",
+		"build": "rollup --config rollup.config.ts --configPlugin typescript",
+		"flush": "git add . && git commit -m '.'",
+		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish",
+		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish",
+		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish"
+	},
+	"dependencies": {
+		"react": "18.0.0"
+	},
+	"devDependencies": {
+		"react-dom": "18.0.0",
+		"@eslint/js": "^9.8.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^9.8.0",
+		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
+		"eslint-plugin-react-refresh": "^0.4.9",
+		"globals": "^15.9.0",
+		"typescript": "^5.5.3",
+		"typescript-eslint": "^8.0.0",
+		"vite": "^5.4.0",
+
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"rollup": "^4.20.0",
+		"rollup-plugin-dts": "^6.1.1",
+		"tslib": "^2.6.3"
+	}
+}

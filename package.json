@@ -1,13 +1,13 @@
 {
   "name": "@koranidro/react-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "koranidro <koranidro@gmail.com>",
   "description": "리액트 유틸리티",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/koranidro/koranidro-react-utils.git"
-	},
+    "type": "git",
+    "url": "https://github.com/koranidro/koranidro-react-utils.git"
+  },
   "keywords": [
     "koranidro",
     "고라니드로",

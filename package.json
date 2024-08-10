@@ -6,7 +6,7 @@
   "description": "리액트 유틸리티",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koranidro/koranidro-react-utils.git"
+    "url": "git+https://github.com/koranidro/koranidro-react-utils.git"
   },
   "keywords": [
     "koranidro",
